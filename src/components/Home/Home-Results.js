@@ -7,7 +7,7 @@ class HomeResults extends React.Component {
         return (
             <React.Fragment>
                 <Container fixed>
-                    <Typography component="div" style={{ backgroundColor: '#E3EBF7', height: '100vh' }} />
+                    <Typography component="div" style={{ backgroundColor: '#eee6f0', height: '100vh' }} />
                 </Container>
             </React.Fragment>
         );

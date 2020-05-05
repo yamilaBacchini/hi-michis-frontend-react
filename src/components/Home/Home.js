@@ -6,9 +6,7 @@ import './Home.css';
 class Home extends React.Component {
     render() {
         return (
-        <div>
-            <h1>Adopciones</h1>
-            <br />
+        <div style={{marginTop: 70}}>
             <HomeFilters />
             <br /><br />
             <HomeResults />
