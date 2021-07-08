@@ -7,7 +7,7 @@ import FormControl from "@material-ui/core/FormControl";
 import Fab from "@material-ui/core/Fab";
 import SearchIcon from '@material-ui/icons/Search';
 
-class HomeFilters extends React.Component {
+class AdoptionCatsFilters extends React.Component {
 
     render() {
         return (
@@ -36,4 +36,4 @@ class HomeFilters extends React.Component {
     }
 }
 
-export default HomeFilters;
+export default AdoptionCatsFilters;

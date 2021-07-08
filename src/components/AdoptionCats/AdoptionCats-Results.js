@@ -1,10 +1,10 @@
 import React from 'react';
 import Container from "@material-ui/core/Container";
-import AdoptionCatCard from '../AdoptionCat/AdoptionCat-Card'
+import AdoptionCatCard from '../AdoptionCats/AdoptionCat-Card'
 import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
 
-class HomeResults extends React.Component {
+class AdoptionCatsResults extends React.Component {
     render() {
         let nums = Array.from(Array(9).keys());
         return (
@@ -25,4 +25,4 @@ class HomeResults extends React.Component {
     }
 }
 
-export default HomeResults;
+export default AdoptionCatsResults;
