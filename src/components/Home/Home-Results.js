@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from "@material-ui/core/Container";
-import AdoptionCatCard from '../AdoptionCat/AdoptionCar-Card'
+import AdoptionCatCard from '../AdoptionCat/AdoptionCat-Card'
 import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
 
