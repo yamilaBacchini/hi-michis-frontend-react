@@ -9,6 +9,7 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
+import { Hidden } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -27,26 +28,30 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-export default function AdoptionCatCard() {
+export default function AdoptionCatCard(props) {
     const classes = useStyles();
-    const [expanded] = React.useState(false);
+
+    const todayDate = new Date();
+    const dateOfBirth = new Date(props.cat.dateOfBirth);
+
+    const months =Math.abs(Math.round((todayDate.getTime() - dateOfBirth.getTime()) / (1000 * 60 * 60 * 24 * 30.5)));
+    const years = Math.floor(months/12);
 
     return (
+        <div>
         <Card className={classes.root}>
             <CardHeader
                 classes={{title: classes.title, subheader: classes.subheader}}
-                title="Gatito"
-                subheader="3 meses"
+                title={props.cat.name}
+                subheader={years>0 ? `${years} años` : `${months} meses`}
             />
             <CardMedia
                 className={classes.media}
-                //image= ""
-                title="Paella dish"
+                image= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLYQ2kaNwGhSJSjzTZYGbU3zXhO_yErZM6fw&usqp=CAU"
             />
-            <CardContent>
+            <CardContent style={{maxHeight:80, minHeight:80, overflow:'hidden'}}>
                 <Typography variant="body2" color="textSecondary" component="p">
-                    This impressive paella is a perfect party dish and a fun meal to cook together with your
-                    guests. Add 1 cup of frozen peas along with the mussels, if you like.
+                    {props.cat.description}
                 </Typography>
             </CardContent>
             <CardActions disableSpacing>
@@ -58,5 +63,6 @@ export default function AdoptionCatCard() {
                 </IconButton>
             </CardActions>
         </Card>
+        </div>
     );
 }
