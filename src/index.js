@@ -7,4 +7,4 @@ import AdoptionCats from './components/AdoptionCats/AdoptionCats';
 
 ReactDOM.render(<MenuToolBar />, document.getElementById('menuToolBar'));
 
-ReactDOM.render(<AdoptionCats />, document.getElementById('root'));
+ReactDOM.render(<Home />, document.getElementById('root'));
