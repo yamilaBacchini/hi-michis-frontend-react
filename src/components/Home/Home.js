@@ -3,6 +3,7 @@ import './Home.css';
 import { Container, Row, Col, Image, Carousel } from 'react-bootstrap';
 import AdoptionsImage from './../../assets/images/AdoptionsImage.png';
 import FoundAndLostImage from './../../assets/images/FoundAndLostImage.png';
+import HomeImages from './HomeImage';
 
 
 class Home extends React.Component {
@@ -57,10 +58,10 @@ class Home extends React.Component {
                 </Col>
                 <Col>
                     <Row style={{marginBottom:'4%'}}>
-                        <Image fluid src={FoundAndLostImage} rounded />
+                        <HomeImages image={FoundAndLostImage} name="Perdidos y Encontrados" textPosition="right" />
                     </Row>
                     <Row>
-                        <Image fluid src={AdoptionsImage} rounded />
+                        <HomeImages image={AdoptionsImage} name="Adopciones" textPosition="left"/>
                     </Row>
                 </Col>
                 <Col>
