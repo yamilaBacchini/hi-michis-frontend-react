@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
-import { RoundedCorner } from '@material-ui/icons';
+import {Link} from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -103,6 +103,7 @@ export default function HomeImages(props) {
             width: image.width
           }}
         >
+          <Link to={props.link}>
           <span
             className={classes.imageSrc}
             style={{
@@ -122,6 +123,7 @@ export default function HomeImages(props) {
               <span className={classes.imageMarked} />
             </Typography>
           </span>
+          </Link>
         </ButtonBase>
       ))}
     </div>

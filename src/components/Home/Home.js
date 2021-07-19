@@ -4,6 +4,7 @@ import { Container, Row, Col, Image, Carousel } from 'react-bootstrap';
 import AdoptionsImage from './../../assets/images/AdoptionsImage.png';
 import FoundAndLostImage from './../../assets/images/FoundAndLostImage.png';
 import HomeImages from './HomeImage';
+import BasePage from '../Shared/BasePage';
 
 
 class Home extends React.Component {
@@ -58,10 +59,10 @@ class Home extends React.Component {
                 </Col>
                 <Col>
                     <Row style={{marginBottom:'4%'}}>
-                        <HomeImages image={FoundAndLostImage} name="Perdidos y Encontrados" textPosition="right" />
+                        <HomeImages image={FoundAndLostImage} name="Perdidos y Encontrados" textPosition="right" link="/" />
                     </Row>
                     <Row>
-                        <HomeImages image={AdoptionsImage} name="Adopciones" textPosition="left"/>
+                        <HomeImages image={AdoptionsImage} name="Adopciones" textPosition="left" link="/adoption-cats" />
                     </Row>
                 </Col>
                 <Col>
