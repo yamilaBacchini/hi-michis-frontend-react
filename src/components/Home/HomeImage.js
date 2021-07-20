@@ -117,7 +117,7 @@ export default function HomeImages(props) {
               variant="subtitle1"
               color="inherit"
               className={classes.imageTitle}
-              style={{marginLeft: props.textPosition === "right" ? '45%' : '-45%'}, {marginRight: props.textPosition === "left" ? '45%' : '-45%'}}
+              style={{marginLeft: props.textPosition === "right" ? '45%' : '0%', marginRight: props.textPosition === "left" ? '45%' : '0%'}}
             >
               {image.title}
               <span className={classes.imageMarked} />

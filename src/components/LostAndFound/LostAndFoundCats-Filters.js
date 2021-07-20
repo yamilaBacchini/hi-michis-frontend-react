@@ -9,7 +9,8 @@ import SearchIcon from '@material-ui/icons/Search';
 import Icon from '@material-ui/core/Icon';
 import { Row} from 'react-bootstrap';
 
-class AdoptionCatsFilters extends React.Component {
+class LostAndFoundCatsFilters extends React.Component {
+
     render() {
         return (
             <div>
@@ -48,10 +49,12 @@ class AdoptionCatsFilters extends React.Component {
                         <Row>
                             <Icon className="fa fa-chevron-down"/>
                         </Row>
+
+                        
                 </form>
             </div>
         );
     }
 }
 
-export default AdoptionCatsFilters;
+export default LostAndFoundCatsFilters;

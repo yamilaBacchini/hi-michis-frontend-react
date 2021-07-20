@@ -1,5 +1,4 @@
 import React from 'react';
-import BasePage from '../Shared/BasePage';
 import AdoptionCatsFilters from './AdoptionCats-Filters';
 import AdoptionCatsResults from './AdoptionCats-Results';
 import './AdoptionCats.css';
